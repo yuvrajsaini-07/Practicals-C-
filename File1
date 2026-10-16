@@ -1,1 +1,39 @@
+#include<bits/stdc++.h>
+using namespace std;
+class student{
+string name;
+double roll_no;
+int m1;
+int m2;
+int m3;    
 
+public:
+student(string n, double r, int m, int mm, int mmm){
+       name = n;
+       roll_no = r;
+       m1 = m;
+       m2 = mm;
+       m3 = mmm;
+}
+void display(){
+int total = m1+m2+m3;
+double percentage = total/3;
+
+cout<<"Name : " << name<<endl;
+cout<<"Roll no. : "<< roll_no <<endl;
+cout<<"Total marks obtained : " << total<<endl;
+cout<<"Percentage obtained : " <<percentage<<endl;
+    cout<<endl;
+}
+};
+
+int main(){
+student s1("Yuvraj",249,56,90,53);
+student s2("Sarthak",205,56,90,53);    
+student s3("Dimple",143,56,90,53);    
+s1.display();
+s2.display();
+s3.display();
+
+return 0; 
+}
